@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varve Privacy Policy</title>
+<style>
+  :root {
+    --bg: #080B18;
+    --card: #151A2B;
+    --line: #232A40;
+    --text: #EBF0FC;
+    --muted: #949EBD;
+    --accent: #5E8DF0;
+    --green: #35D08A;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 72px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 26px; margin-bottom: 34px; }
+  .eyebrow { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; margin: 0 0 10px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 21px; margin: 40px 0 12px; letter-spacing: -.01em; }
+  p, li { color: #D3DAEC; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 0 0 8px;
+  }
+  .card p { margin: 0; }
+  .card strong { color: var(--green); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Varve 3D Print Manager</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 8, 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>The short version.</strong> Varve has no accounts, no ads, no analytics and no tracking of any kind. Your data stays on your device, and in your own private iCloud if you turn sync on. There are no Varve servers, so nothing you enter is ever sent to me.</p>
+</div>
+
+<h2>1. Who this covers</h2>
+<p>This policy applies to the Varve 3D Print Manager app for iPhone and iPad, published by Daniel Klaver. It does not cover any other app or website.</p>
+
+<h2>2. What Varve collects about you</h2>
+<p>Nothing. Varve does not ask you to create an account, does not ask for your name or email, and does not include any analytics, advertising or attribution SDK. No usage data, crash reports or identifiers are collected by the app or sent to me.</p>
+<p>If you choose to send Apple crash and usage data in iOS Settings, Apple may share anonymized diagnostics with me through App Store Connect. That is an Apple feature, controlled entirely by you in Settings, Privacy and Security, Analytics and Improvements.</p>
+
+<h2>3. Where your data lives</h2>
+<p>Everything Varve tracks (printers, filament spools, print jobs, maintenance tasks, inventory, storage locations, humidity readings, equipment, notes and photos) is stored in a database on your device.</p>
+<p>If you turn on iCloud Sync, that same data is also stored in Varve's private CloudKit database inside your personal iCloud account. Only you can reach it. Apple encrypts it in transit and at rest, and I have no access to it and no ability to look at it. iCloud Sync is off until you switch it on, and it is a Varve Pro feature.</p>
+
+<h2>4. Photos you attach</h2>
+<p>Photos you attach to a printer, spool or maintenance task are copied into Varve's own storage and live alongside the rest of your data: on your device, and in your private iCloud if sync is on. They are never uploaded anywhere else. Varve uses the system photo picker, so it never gets access to your photo library as a whole, only to the individual images you pick.</p>
+
+<h2>5. Connecting to a printer</h2>
+<p>Varve can connect to a Bambu Lab printer over your own Wi-Fi network to display its status, temperatures and AMS contents. That connection goes directly from your device to the printer on your local network. It does not pass through any server, and it does not use the Bambu cloud.</p>
+<p>The connection is read only. Varve never starts, pauses or cancels a print.</p>
+<p>The printer's IP address, serial number and access code are stored in the iOS Keychain on your device, not in the app's database. If you use iCloud Keychain, iOS syncs them to your other devices end to end encrypted. Removing the connection in Varve deletes them.</p>
+<p>iOS asks for Local Network permission the first time Varve tries to reach a printer. If you decline, everything else in Varve keeps working.</p>
+
+<h2>6. Notifications</h2>
+<p>Maintenance reminders are scheduled locally on your device by iOS. Nothing about your schedule leaves your device in order to deliver them, and there is no push server.</p>
+
+<h2>7. Purchases</h2>
+<p>Varve Pro is sold through the App Store. Payment is handled entirely by Apple, and Varve never receives or sees your payment details. The app only asks StoreKit whether your purchase is currently active. Apple's own privacy policy covers that transaction.</p>
+
+<h2>8. Backups you export</h2>
+<p>Varve Pro can export your data as a <code>.varvebackup</code> file. That file is written wherever you choose to save it, using the system file picker. Once it leaves the app it is yours to manage. Varve does not upload it and cannot read it back unless you import it yourself.</p>
+
+<h2>9. Children</h2>
+<p>Varve is not directed at children and collects no personal information from anyone, including children.</p>
+
+<h2>10. Your control over your data</h2>
+<ul>
+  <li>Delete any individual record inside the app at any time.</li>
+  <li>Settings, Sample Data, Clear All Data removes everything Varve stores.</li>
+  <li>Turning off iCloud Sync stops Varve writing to iCloud. Deleting the app removes its local data, and deleting Varve's data from iCloud Settings removes the synced copy.</li>
+  <li>There is no account to close, because there is no account.</li>
+</ul>
+
+<h2>11. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new date at the top. Material changes will also be noted in the app's release notes.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about privacy in Varve: <a href="mailto:dklaver15@gmail.com">dklaver15@gmail.com</a>.</p>
+
+<footer>
+  <a href="support.html">Support</a>
+  <a href="index.html">Privacy Policy</a>
+  <span>Varve 3D Print Manager</span>
+</footer>
+
+</div>
+</body>
+</html>

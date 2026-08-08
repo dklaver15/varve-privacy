@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varve Support</title>
+<style>
+  :root {
+    --bg: #080B18;
+    --card: #151A2B;
+    --line: #232A40;
+    --text: #EBF0FC;
+    --muted: #949EBD;
+    --accent: #5E8DF0;
+    --green: #35D08A;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 72px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 26px; margin-bottom: 34px; }
+  .eyebrow { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; margin: 0 0 10px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -.02em; }
+  .lede { color: var(--muted); font-size: 16px; margin: 0; }
+  h2 { font-size: 21px; margin: 44px 0 14px; letter-spacing: -.01em; }
+  h3 { font-size: 17px; margin: 0 0 6px; color: var(--text); }
+  p, li { color: #D3DAEC; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 0 0 14px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .card strong { color: var(--green); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  code { background: #1E2437; padding: 1px 6px; border-radius: 5px; font-size: 14px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Varve 3D Print Manager</p>
+  <h1>Support</h1>
+  <p class="lede">Questions, bugs and feature requests all go to the same place: <a href="mailto:dklaver15@gmail.com">dklaver15@gmail.com</a>. Include your iOS version and what you were doing when it went wrong, and you will get a real reply.</p>
+</header>
+
+<h2>Getting started</h2>
+
+<div class="card">
+  <h3>What does Varve actually track?</h3>
+  <p>Filament spools with remaining weight and drying history, printers and their maintenance schedules, finished prints with photos and ratings, storage locations with humidity readings, spare parts inventory, and workshop equipment. The Dashboard pulls the urgent parts of all of that onto one screen.</p>
+</div>
+
+<div class="card">
+  <h3>Do I need an account?</h3>
+  <p>No. There is no sign up, no login and no server. Open the app and start entering your gear.</p>
+</div>
+
+<div class="card">
+  <h3>Can I try it with fake data first?</h3>
+  <p>Yes. Settings, Sample Data, Load Sample Data fills the app with a realistic workshop so you can look around. Clear All Data wipes it, and everything else, whenever you want.</p>
+</div>
+
+<h2>Varve Pro</h2>
+
+<div class="card">
+  <h3>What is free and what is Pro?</h3>
+  <p>Everything core is free forever, with no ads: up to 20 spools and 2 printers, all print logging, all maintenance reminders, humidity tracking, inventory and photos. <strong>Varve Pro</strong> removes the spool and printer caps and adds iCloud sync across your devices, custom material types, and backup export and import.</p>
+</div>
+
+<div class="card">
+  <h3>How do I upgrade or restore a purchase?</h3>
+  <p>Settings, Varve Pro. Pick monthly, yearly or lifetime. If you have already bought it and a new device is not showing it, tap Restore Purchases on that same screen while signed in to the Apple Account you bought it with.</p>
+</div>
+
+<div class="card">
+  <h3>How do I cancel a subscription?</h3>
+  <p>Subscriptions are managed by Apple, not by me. Open iOS Settings, tap your name, then Subscriptions, then Varve. Lifetime is a one time purchase and has nothing to cancel.</p>
+</div>
+
+<h2>iCloud sync</h2>
+
+<div class="card">
+  <h3>Sync is on but my other device is empty.</h3>
+  <p>Check three things. Both devices are signed in to the same Apple Account, iCloud Drive is on in iOS Settings, and Varve Pro is active on both. The first sync of a large library can take a few minutes, and iOS deprioritises it on low power mode or a poor connection.</p>
+</div>
+
+<div class="card">
+  <h3>Is my data readable by anyone else?</h3>
+  <p>No. Varve syncs through your own private CloudKit database. I have no access to it. See the <a href="index.html">privacy policy</a> for the full detail.</p>
+</div>
+
+<h2>Connecting a Bambu Lab printer</h2>
+
+<div class="card">
+  <h3>What do I need?</h3>
+  <p>Three things from the printer itself. On a P1, Settings, WLAN shows the IP address and access code, and Settings, Device shows the serial number. Enter them on the printer's detail screen under Connect Printer.</p>
+</div>
+
+<div class="card">
+  <h3>It says it cannot connect.</h3>
+  <ul>
+    <li>The printer is awake, not asleep or mid firmware update.</li>
+    <li>The IP still matches. It can change after a reboot or a router restart.</li>
+    <li>Your iPhone is on the same Wi-Fi as the printer, not a guest network and not a 5GHz only band the printer cannot join.</li>
+    <li>Varve has Local Network permission. iOS Settings, Varve, Local Network.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Will this interfere with Bambu Handy or cloud printing?</h3>
+  <p>No. Varve only ever reads from the printer: status, temperatures and what is in the AMS. It never starts, pauses or cancels a print, so you do not need Developer Mode and your existing setup is untouched.</p>
+</div>
+
+<h2>Data and backups</h2>
+
+<div class="card">
+  <h3>How do I back up my data?</h3>
+  <p>Varve Pro adds Settings, Backup, Export. It writes a single <code>.varvebackup</code> file that you save wherever you like. Import reads it back on any device.</p>
+</div>
+
+<div class="card">
+  <h3>How do I delete everything?</h3>
+  <p>Settings, Sample Data, Clear All Data. If sync is on, that removes the iCloud copy too.</p>
+</div>
+
+<div class="card">
+  <h3>Notes are showing asterisks instead of bold text.</h3>
+  <p>Notes fields accept Markdown, and the detail screens render it. Settings, Markdown Guide has the syntax. Formatting appears once you save.</p>
+</div>
+
+<h2>Still stuck?</h2>
+<p>Email <a href="mailto:dklaver15@gmail.com">dklaver15@gmail.com</a> with your device model, iOS version and Varve version (Settings, About). Screenshots help more than anything else.</p>
+
+<footer>
+  <a href="support.html">Support</a>
+  <a href="index.html">Privacy Policy</a>
+  <span>Varve 3D Print Manager</span>
+</footer>
+
+</div>
+</body>
+</html>
